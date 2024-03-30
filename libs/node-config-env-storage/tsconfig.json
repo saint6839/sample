@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    // Platform specific settings (Node.js only)
+    "module": "NodeNext", // Specify module code generation
+    "target": "ESNext", // Specify ECMAScript target version
+    "lib": ["es6", "dom"], // Specify library files to be included in the compilation
+    "types": ["jest", "node", "bun-types"], // Specify the types to include
+    "moduleResolution": "NodeNext", // Resolve modules using Node.js style
+    // Rules
+    "noEmit": true, // Disable emitting of emitted files
+    "strict": false, // Enable all strict type checking options
+    "checkJs": true, // Enable error reporting in type-checked JavaScript files
+    "allowJs": true, // Allow JavaScript files to be compiled
+    "sourceMap": true, // Generate corrresponding .map file
+    "incremental": true, // Enable incremental compilation by reading/writing information from prior compilations to a file on disk
+    "declaration": true, // Generate corresponding .d.ts file
+    "skipLibCheck": true, // Skip type checking of all declaration files
+    "noUnusedLocals": true, // Report errors on unused locals
+    "isolatedModules": true, // Unconditionally emit imports for unresolved files
+    "esModuleInterop": true, // Disables namespace imports (import * as fs from "fs") and enables CJS/AMD/UMD style imports (import fs from "fs")
+    "strictNullChecks": true, // Enable strict null checks
+    "noImplicitReturns": true, // Report error when not all code paths in function return a value
+    "resolveJsonModule": true, // Include modules imported with .json extension
+    "noUnusedParameters": true, // Report errors on unused parameters
+    "noImplicitOverride": true, // Report errors when class properties are declared without explicit modifiers like public, private, or protected.
+    "noFallthroughCasesInSwitch": true, // Report errors for fallthrough cases in switch statement
+    "allowSyntheticDefaultImports": true, // Allow default imports from modules with no default export
+    "forceConsistentCasingInFileNames": true, // Disallow inconsistently-cased references to the same file.
+    "noPropertyAccessFromIndexSignature": true, // Enforces using indexed accessors for keys declared using an indexed type
+    "baseUrl": ".",
+    "rootDir": "../..",
+    "paths": {
+      "libs/*": ["../../libs/*"],
+      "tools/*": ["../../tools/*"],
+      "packages/*": ["../../packages/*"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.js"],
+  "exclude": ["node_modules", "jest.config.ts", "**/*.spec.ts", "**/*.test.ts"]
+}

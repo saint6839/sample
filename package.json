@@ -1,0 +1,22 @@
+{
+  "name": "nestjs-boilerplate-api",
+  "private": true,
+  "license": "ISC",
+  "version": "0.0.1",
+  "author": "Oleksii.Duhnist",
+  "description": "nestjs-boilerplate",
+  "scripts": {
+    "dev": "cd ./apps/nestjs-boilerplate && bun run dev",
+    "build": "cd ./apps/nestjs-boilerplate && bun run build",
+    "serve": "cd ./apps/nestjs-boilerplate && bun run serve"
+  },
+  "workspaces": [
+    "templates/*",
+    "tools/*",
+    "libs/*",
+    "apps/*"
+  ],
+  "trustedDependencies": [
+    "@nestjs/core"
+  ]
+}

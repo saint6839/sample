@@ -1,0 +1,7 @@
+{
+  "watch": ["modules", "shared", "main.ts", "esbuild.mjs", "tsconfig.json", "../../libs/**/*"],
+  "ignore": ["src/**/*.test.ts"],
+  "ext": "ts,mjs,js,json",
+  "exec": "bun run build && bun run serve",
+  "legacyWatch": true
+}

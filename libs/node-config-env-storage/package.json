@@ -1,0 +1,23 @@
+{
+  "name": "@libs/node-config-env-storage",
+  "version": "0.0.1",
+  "module": "./index.ts",
+  "main": "./index.ts",
+  "scripts": {
+    "dev": "bun run ./index.ts"
+  },
+  "dependencies": {
+    "envalid": "^8.0.0",
+    "typescript": "latest"
+  },
+  "pluginVersions": {
+    "latest": "0.0.1",
+    "previous": "0.0.0",
+    "next": "0.0.1",
+    "list": [
+      "0.0.1",
+      "0.0.0"
+    ]
+  },
+  "pluginsDependencies": {}
+}
